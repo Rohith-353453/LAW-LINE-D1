@@ -1,0 +1,80 @@
+<!-- constitution.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constitutional & Citizen Rights - LAW LINE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Outfit', 'sans-serif'] }, colors: { primary: '#0D9488', accent: '#134E4A', dark: '#1e293b', light: '#f8fafc' } } } }
+    </script>
+</head>
+
+<body class="bg-light text-dark min-h-screen">
+    <!-- Header (same) -->
+    <header id="app-header"></header>
+
+    <!-- Theme Hero -->
+    <section class="py-16 bg-primary/10 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Constitutional & Citizen Rights</h2>
+            <p class="text-xl text-gray-700">Simple explanations of fundamental rights, equality, freedom of speech, and
+                RTI.</p>
+        </div>
+    </section>
+
+    <!-- Explainers List -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6 space-y-12">
+            <div class="border border-gray-300 rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Right to Information (RTI)</h3>
+                <p class="text-gray-700 mb-6">Citizens can seek information from public authorities.</p>
+                <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                    <li>File RTI online or offline with PIO.</li>
+                    <li>Response within 30 days.</li>
+                    <li>Appeal to First Appellate Authority if denied.</li>
+                </ul>
+                <p class="mt-6 text-sm text-gray-500">Reference: <a
+                        href="https://www.indiacode.nic.in/handle/123456789/1980" target="_blank"
+                        class="text-primary underline">Right to Information Act, 2005</a></p>
+            </div>
+
+            <div class="border border-gray-300 rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Freedom of Speech</h3>
+                <p class="text-gray-700 mb-6">Article 19(1)(a) guarantees free expression.</p>
+                <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                    <li>Subject to reasonable restrictions.</li>
+                    <li>Includes right to protest peacefully.</li>
+                    <li>Defamation or hate speech not protected.</li>
+                </ul>
+                <p class="mt-6 text-sm text-gray-500">Reference: <a href="https://www.constitutionofindia.net"
+                        target="_blank" class="text-primary underline">Article 19, Constitution of India</a></p>
+            </div>
+
+            <div class="border border-gray-300 rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Right to Equality</h3>
+                <p class="text-gray-700 mb-6">No discrimination on grounds of religion, caste, etc.</p>
+                <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                    <li>Equal protection of laws.</li>
+                    <li>Reservation for backward classes.</li>
+                    <li>Approach courts for violation.</li>
+                </ul>
+                <p class="mt-6 text-sm text-gray-500">Reference: <a href="https://www.constitutionofindia.net"
+                        target="_blank" class="text-primary underline">Articles 14-16, Constitution</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Footer -->
+    <footer id="app-footer"></footer>
+
+    <script type="module">
+        import { initLayout } from './components/layout.js';
+        initLayout();
+    </script>
+</body>
+
+</html>

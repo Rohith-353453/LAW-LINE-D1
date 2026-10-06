@@ -1,0 +1,77 @@
+<!-- seniorcitizens.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Citizens - LAW LINE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Outfit', 'sans-serif'] }, colors: { primary: '#0D9488', accent: '#134E4A', dark: '#1e293b', light: '#f8fafc' } } } }
+    </script>
+</head>
+
+<body class="bg-light text-dark min-h-screen">
+    <!-- Header -->
+    <header id="app-header"></header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-primary/10 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Legal Resources for Senior Citizens</h2>
+            <p class="text-xl text-gray-700">Maintenance, welfare, and protection rights for elderly.</p>
+        </div>
+    </section>
+
+    <!-- Explainers List -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6 space-y-12">
+            <div class="border border-gray-300 rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Maintenance from Children</h3>
+                <p class="text-gray-700 mb-6">Senior citizens can claim maintenance.</p>
+                <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                    <li>File application with Maintenance Tribunal.</li>
+                    <li>Monthly allowance up to ₹10,000.</li>
+                    <li>Tribunal decision within 90 days.</li>
+                </ul>
+                <p class="mt-6 text-sm text-gray-500">Reference: Maintenance and Welfare of Parents and Senior Citizens
+                    Act, 2007</p>
+            </div>
+
+            <div class="border border-gray-300 rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Protection from Abuse</h3>
+                <p class="text-gray-700 mb-6">Right to live with dignity.</p>
+                <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                    <li>Report abuse to Tribunal or police.</li>
+                    <li>Eviction of abusive children from property.</li>
+                    <li>Old age homes as option.</li>
+                </ul>
+                <p class="mt-6 text-sm text-gray-500">Reference: Maintenance and Welfare of Parents and Senior Citizens
+                    Act, 2007</p>
+            </div>
+
+            <div class="border border-gray-300 rounded-2xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Healthcare Benefits</h3>
+                <p class="text-gray-700 mb-6">Priority in treatment and schemes.</p>
+                <ul class="list-disc pl-6 space-y-2 text-gray-700">
+                    <li>Separate queues in hospitals.</li>
+                    <li>Concessions in medicines and travel.</li>
+                    <li>State-specific pension schemes.</li>
+                </ul>
+                <p class="mt-6 text-sm text-gray-500">Reference: National Policy for Senior Citizens</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Footer -->
+    <footer id="app-footer"></footer>
+
+    <script type="module">
+        import { initLayout } from './components/layout.js';
+        initLayout();
+    </script>
+</body>
+
+</html>
